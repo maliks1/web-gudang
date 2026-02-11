@@ -155,7 +155,7 @@ Dashboard menampilkan:
 
 ## License
 
-Proyek ini menggunakan license MIT. Lihat file `LICENSE` untuk detail lebih lanjut.
+Proyek ini menggunakan license Apache. Lihat file `LICENSE` untuk detail lebih lanjut.
 
 ## Support
 
