@@ -44,6 +44,9 @@ class TransactionController extends Controller
 
         $product = Product::findOrFail($request->product_id);
 
+        // Authorize stock update
+        $this->authorize('updateStock', $product);
+
         // Tambah stok produk
         $product->increment('stok_saat_ini', $request->jumlah);
 
@@ -93,6 +96,9 @@ class TransactionController extends Controller
         }
 
         $product = Product::findOrFail($request->product_id);
+
+        // Authorize stock update
+        $this->authorize('updateStock', $product);
 
         // Validasi stok cukup
         if ($request->jumlah > $product->stok_saat_ini) {

@@ -106,6 +106,5 @@ Aplikasi akan berjalan di `http://localhost:8000`
 - name (string)
 - email (string, unique)
 - password (string, hashed)
-- email_verified_at (timestamp, nullable)
 - remember_token
 - created_at, updated_at 

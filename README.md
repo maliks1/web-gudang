@@ -101,7 +101,6 @@ Setelah menjalankan seeder, Anda akan memiliki:
 - `name` (string)
 - `email` (string, unique)
 - `password` (string, hashed)
-- `email_verified_at` (timestamp, nullable)
 - `remember_token`
 - `created_at`, `updated_at`
 
