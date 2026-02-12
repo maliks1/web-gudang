@@ -139,6 +139,13 @@
                             </tbody>
                         </table>
                     </div>
+
+                    <!-- Pagination -->
+                    @if($products->hasPages())
+                        <div class="d-flex justify-content-center mt-4">
+                            {{ $products->links() }}
+                        </div>
+                    @endif
                 @else
                     <div class="text-center py-5">
                         <i class="bi bi-box display-1 text-muted"></i>
