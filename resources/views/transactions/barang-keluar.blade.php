@@ -3,16 +3,6 @@
 @section('title', 'Transaksi Barang Keluar - Sistem Gudang')
 
 @section('content')
-<div class="row">
-    <div class="col-12">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h1 class="h3 mb-0">Transaksi Barang Keluar</h1>
-            <a href="{{ route('products.index') }}" class="btn btn-secondary">
-                <i class="bi bi-box"></i> Master Barang
-            </a>
-        </div>
-    </div>
-</div>
 
 <div class="row justify-content-center">
     <div class="col-md-8">

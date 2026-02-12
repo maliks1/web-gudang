@@ -47,10 +47,10 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #1f2937;">
 
-        <div class="container py-3">
+        <div class="container">
 
             <a class="navbar-brand" href="{{ route('dashboard') }}">
-                <i class="bi bi-box-seam"></i> Sistem Gudang
+                <img src="{{ asset('icon/logo.svg') }}" alt="Logo" width="75" height="75" class="d-inline-block align-text-top me-2">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -58,38 +58,40 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}"
-                            href="{{ route('dashboard') }}">
-                            <i class="bi bi-house"></i> Dashboard
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('products.*') ? 'active' : '' }}"
-                            href="{{ route('products.index') }}">
-                            <i class="bi bi-box"></i> Master Barang
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('transactions.barang-masuk*') ? 'active' : '' }}"
-                            href="{{ route('transactions.barang-masuk') }}">
-                            <i class="bi bi-box-arrow-in-down"></i> Barang Masuk
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('transactions.barang-keluar*') ? 'active' : '' }}"
-                            href="{{ route('transactions.barang-keluar') }}">
-                            <i class="bi bi-box-arrow-up"></i> Barang Keluar
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{ request()->routeIs('reports.*') ? 'active' : '' }}"
-                            href="{{ route('reports.transaction-history') }}">
-                            <i class="bi bi-file-earmark-text"></i> Laporan
-                        </a>
-                    </li>
-                </ul>
+                <div class="mx-auto">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('dashboard') ? 'active' : '' }}"
+                                href="{{ route('dashboard') }}">
+                                <i class="bi bi-house"></i> Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('products.*') ? 'active' : '' }}"
+                                href="{{ route('products.index') }}">
+                                <i class="bi bi-box"></i> Master Barang
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('transactions.barang-masuk*') ? 'active' : '' }}"
+                                href="{{ route('transactions.barang-masuk') }}">
+                                <i class="bi bi-box-arrow-in-down"></i> Barang Masuk
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('transactions.barang-keluar*') ? 'active' : '' }}"
+                                href="{{ route('transactions.barang-keluar') }}">
+                                <i class="bi bi-box-arrow-up"></i> Barang Keluar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('reports.*') ? 'active' : '' }}"
+                                href="{{ route('reports.transaction-history') }}">
+                                <i class="bi bi-file-earmark-text"></i> Laporan
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
